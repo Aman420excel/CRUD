@@ -1,0 +1,20 @@
+.homeForm {
+    display: flex;
+    place-content: center;
+    background: currentColor;
+    margin-top: 5vh;
+}
+.p-5 {
+    width: 19vw;
+}
+.submitBtn {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+.showForm {
+    display: flex;
+}
+.hideForm {
+    display: none;
+}
