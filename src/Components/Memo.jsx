@@ -8,7 +8,7 @@ const Memo = () => {
     const calculation = useMemo(()=> expensiveCalculation(count),[count])
 
     function expensiveCalculation(count){
-        for(let i=0;i<1000000000;i++){
+        for(let i=0;i<10;i++){
             count=count+1;
         }
         return count;
@@ -17,8 +17,9 @@ const Memo = () => {
 
   return (
     <div>
-        <button onClick={()=>updateCount(count+1)}>UPDATE</button>
+        <button onClick={()=>{updateCount(count+1)}}>UPDATE {count}</button>
         <h1>{calculation}</h1>
+        
     </div>
   )
 }
